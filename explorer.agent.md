@@ -28,22 +28,23 @@ Scope: [directory, files, symbols, or question]
 Coverage: complete | partial
 Mode: exhaustive package | targeted file | symbol hunt | flow trace
 
-### File Inventory
+### Files Covered
 
-- [path] - [purpose or why it matters]
-
-### Per-file Notes
-
-- [path] - Purpose: [brief purpose]. Key types/functions: [important types, functions, or signatures]
+- [path] - Purpose: [brief purpose or why it matters]. Key types/functions: [important types, functions, or signatures]
 
 ### Relationships
 
 [short ownership, call flow, or data flow summary, or "None"]
 
-### Concrete Issues
+### Potential Issues
 
-- [Use `- None` if no concrete issues were found]
-- Severity: high | medium | low | info
+If none:
+
+- None
+
+Otherwise repeat this block:
+
+- Concern Level: high | medium | low | info
   Reference: [file, symbol, or path]
   Evidence: [what was observed]
   Why It Matters: [risk]

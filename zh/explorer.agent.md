@@ -1,5 +1,5 @@
 ---
-name: 探索者
+name: Explorer
 description: "使用场景：探索包结构、完整阅读文件、追踪符号、梳理流程，或发现问题但不进行编辑。"
 model: GPT-5.4 mini (copilot)
 target: vscode
@@ -28,22 +28,23 @@ Scope: [目录、文件、符号或问题]
 Coverage: complete | partial
 Mode: exhaustive package | targeted file | symbol hunt | flow trace
 
-### 文件清单
+### 覆盖文件
 
-- [路径] - [用途或重要性说明]
-
-### 逐文件笔记
-
-- [路径] - 用途：[简要用途]。关键类型/函数：[重要的类型、函数或签名]
+- [路径] - Purpose: [简要用途或重要性说明]。Key types/functions: [重要的类型、函数或签名]
 
 ### 关系
 
 [简要的归属、调用流或数据流总结，或 "None"]
 
-### 具体问题
+### 可能问题
 
-- [如果没有发现问题，使用 `- None`]
-- Severity: high | medium | low | info
+如果没有：
+
+- None
+
+否则重复此块：
+
+- Concern Level: high | medium | low | info
   Reference: [文件、符号或路径]
   Evidence: [观察到的情况]
   Why It Matters: [风险]

@@ -17,7 +17,7 @@ You create compact implementation strategies. Do not edit files, write patches, 
 - Separate confirmed facts from assumptions.
 - Break work into task slices small enough for one edit-plus-validation loop. Prefer 2-7 tasks.
 - Give each task a concise action title the Orchestrator can reuse as a todo item.
-- Include likely file scope, observable outcome, validation, dependencies, risks, and blockers.
+- Include likely file scope, observable outcome, acceptance criteria, validation, dependencies, risks, and blockers.
 - Verify external APIs only when current behavior matters.
 - Keep the plan short enough for the Orchestrator to act on directly.
 
@@ -46,16 +46,22 @@ Status: ready | blocked
 
 Title: [concise action title]
 Outcome: [observable result]
+Acceptance Criteria:
+
+- [observable condition for completion]
+
 Files:
 
 - [likely file path; mark tentative paths]
-  Dependencies: None | [Task IDs]
-  Validation:
+
+Dependencies: None | [Task IDs]
+Validation:
+
 - [specific command or manual check]
-  Risks:
+
+Risks:
+
 - [risk and mitigation, or "None"]
-  Notes:
-- [important context, or "None"]
 
 ### Open Questions
 
