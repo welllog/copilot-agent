@@ -1,3 +1,7 @@
+## github copilot agent
+这些agent定义仅适用于vscode中的github copilot,规范和约束都需要遵循copilot相关文档
+
+
 ## 同步规则
 
 每次修改根目录下的任何 `.agent.md` 文件后，必须同步更新 `zh/` 目录下对应的中文版本。
