@@ -1,5 +1,5 @@
-## github copilot agent
-这些agent定义仅适用于vscode中的github copilot,规范和约束都需要遵循copilot相关文档
+## GitHub Copilot agent
+这些 agent 定义仅适用于 VS Code 中的 GitHub Copilot，规范和约束都需要遵循 Copilot 相关文档
 
 
 ## 同步规则
