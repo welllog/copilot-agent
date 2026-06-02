@@ -1,7 +1,6 @@
 ---
 name: Reviewer
 description: "Use when: independently reviewing risky code, plans, or implementations and reporting findings first without editing."
-model: GPT-5.4 (copilot)
 target: vscode
 user-invocable: false
 tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]

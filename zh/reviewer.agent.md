@@ -1,7 +1,6 @@
 ---
 name: Reviewer
 description: "使用场景：独立审查高风险代码、计划或实现，先报告发现而不进行编辑。"
-model: GPT-5.4 (copilot)
 target: vscode
 user-invocable: false
 tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]

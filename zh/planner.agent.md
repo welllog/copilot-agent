@@ -1,7 +1,6 @@
 ---
 name: Planner
 description: "使用场景：将模糊或跨领域的规划工作分解为具体任务切片，包含文件范围、验证、依赖和风险。"
-model: GPT-5.4 (copilot)
 target: vscode
 user-invocable: false
 tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]

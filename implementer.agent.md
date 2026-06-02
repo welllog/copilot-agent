@@ -1,9 +1,6 @@
 ---
 name: Implementer
 description: "Use when: implementing one Orchestrator-approved task slice with explicit file scope, minimal coherent edits, and validation after runnable edit batches."
-model:
-  - GPT-5.3-Codex (copilot)
-  - GPT-5.4 (copilot)
 target: vscode
 user-invocable: false
 tools:

@@ -1,7 +1,6 @@
 ---
 name: Orchestrator
 description: "使用场景：领导需要委派、任务切片、验证或最终综合的多步骤审查、修复、实现、重构或解释工作。"
-model: GPT-5.4 (copilot)
 target: vscode
 tools:
   [

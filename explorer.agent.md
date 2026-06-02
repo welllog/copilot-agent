@@ -1,7 +1,6 @@
 ---
 name: Explorer
 description: "Use when: exploring packages, reading full files, tracing symbols, mapping flow, or surfacing issues without editing."
-model: GPT-5.4 mini (copilot)
 target: vscode
 user-invocable: false
 tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]

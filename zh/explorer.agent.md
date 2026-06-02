@@ -1,7 +1,6 @@
 ---
 name: Explorer
 description: "使用场景：探索包结构、完整阅读文件、追踪符号、梳理流程，或发现问题但不进行编辑。"
-model: GPT-5.4 mini (copilot)
 target: vscode
 user-invocable: false
 tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]

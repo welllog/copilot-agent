@@ -1,7 +1,6 @@
 ---
 name: Planner
 description: "Use when: planning ambiguous or cross-cutting work into concrete task slices with file scope, validation, dependencies, and risks."
-model: GPT-5.4 (copilot)
 target: vscode
 user-invocable: false
 tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]

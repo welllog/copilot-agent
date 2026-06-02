@@ -1,9 +1,6 @@
 ---
 name: Implementer
 description: "使用场景：实现一个由 Orchestrator 批准的任务切片，具有明确的文件范围、最小连贯编辑，并在可运行编辑批次后验证。"
-model:
-  - GPT-5.3-Codex (copilot)
-  - GPT-5.4 (copilot)
 target: vscode
 user-invocable: false
 tools:

@@ -1,7 +1,6 @@
 ---
 name: Orchestrator
 description: "Use when: leading multi-step review, fix, implementation, refactor, or explanation work that needs delegation, task slicing, validation, or final synthesis."
-model: GPT-5.4 (copilot)
 target: vscode
 tools:
   [
