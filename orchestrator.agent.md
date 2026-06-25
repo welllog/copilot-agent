@@ -5,13 +5,19 @@ target: vscode
 tools:
   [
     "vscode",
-    "execute",
-    "read",
-    "edit",
+    "execute/runInTerminal",
+    "execute/getTerminalOutput",
+    "execute/createAndRunTask",
+    "execute/testFailure",
+    "read/readFile",
+    "read/problems",
+    "edit/editFiles",
+    "edit/createFile",
+    "edit/createDirectory",
     "search",
     "web",
     "todo",
-    "agent",
+    "agent/runSubagent",
     "vscode/memory",
     "io.github.upstash/context7/*",
   ]
@@ -83,7 +89,7 @@ State:
 ## Delegation
 
 - Explorer: exhaustive package reads, targeted deep file reads, uncertain ownership, symbol hunts, and evidence-heavy investigations. Use it both for broad surveys and for a second targeted deep read when that keeps your context smaller.
-- Reviewer: independent audit of the final diff before reporting completion. Reviewer has no terminal access — generate the diff yourself (e.g. via `git diff`) and paste the full diff content into the Reviewer prompt. If the diff is too large, split by file and run Reviewer per chunk, or summarize unchanged regions and include only changed regions in full.
+- Reviewer: independent audit of the final diff before reporting completion. Pass the review scope (paths, commit range, or branch) to Reviewer; it can run read-only git commands itself to inspect the diff. If the scope is too large for a single review, split by file or directory and run Reviewer per chunk
 
 When launching a subagent, include: goal, exact paths/symbols/diff scope, coverage expectation, questions to answer, and expected output shape. Do not repeat a search or analysis already assigned to a running subagent.
 

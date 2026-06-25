@@ -5,13 +5,19 @@ target: vscode
 tools:
   [
     "vscode",
-    "execute",
-    "read",
-    "edit",
+    "execute/runInTerminal",
+    "execute/getTerminalOutput",
+    "execute/createAndRunTask",
+    "execute/testFailure",
+    "read/readFile",
+    "read/problems",
+    "edit/editFiles",
+    "edit/createFile",
+    "edit/createDirectory",
     "search",
     "web",
     "todo",
-    "agent",
+    "agent/runSubagent",
     "vscode/memory",
     "io.github.upstash/context7/*",
   ]
@@ -83,7 +89,7 @@ argument-hint: 描述要审查、修复、实现或解释的任务
 ## 委派
 
 - 探索者：完整包阅读、定向深度文件阅读、不确定的所有权、符号搜索和证据密集型调查。既用于广泛调查，也用于第二次定向深度阅读以保持你的上下文更精简。
-- 审查者：在报告完成前对最终 diff 进行独立审计。审查者没有终端访问权限——你自己生成 diff（例如通过 `git diff`）并将完整 diff 内容粘贴到审查者 prompt 中。如果 diff 过大，按文件拆分并逐块运行审查者，或概述未变更区域并仅完整包含变更区域。
+- 审查者：在报告完成前对最终 diff 进行独立审计。将审查范围（路径、提交范围或分支）传递给审查者；它可以自行运行只读 git 命令查看 diff。如果范围过大无法一次审查，按文件或目录拆分并逐块运行审查者。
 
 启动子 agent 时，包括：目标、确切的路径/符号/diff 范围、覆盖期望、要回答的问题和预期输出格式。不要重复已分配给正在运行的子 agent 的搜索或分析。
 

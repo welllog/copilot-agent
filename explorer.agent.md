@@ -3,7 +3,7 @@ name: Explorer
 description: "Use when: exploring packages, reading full files, tracing symbols, mapping flow, or surfacing issues without editing."
 target: vscode
 user-invocable: false
-tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]
+tools: ["read/readFile", "read/problems", "search", "web", "io.github.upstash/context7/*"]
 ---
 
 # Explorer Agent

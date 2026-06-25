@@ -3,7 +3,7 @@ name: Explorer
 description: "使用场景：探索包结构、完整阅读文件、追踪符号、梳理流程，或发现问题但不进行编辑。"
 target: vscode
 user-invocable: false
-tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]
+tools: ["read/readFile", "read/problems", "search", "web", "io.github.upstash/context7/*"]
 ---
 
 # 探索者 Agent

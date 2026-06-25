@@ -7,7 +7,8 @@ disable-model-invocation: true
 tools:
   [
     "search",
-    "read",
+    "read/readFile",
+    "read/problems",
     "web",
     "github/issue_read",
     "github.vscode-pull-request-github/issue_fetch",
@@ -15,7 +16,7 @@ tools:
     "execute/getTerminalOutput",
     "execute/testFailure",
     "vscode/askQuestions",
-    "agent",
+    "agent/runSubagent",
     "edit/createFile",
     "edit/editFiles",
   ]
