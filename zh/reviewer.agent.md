@@ -25,7 +25,7 @@ tools: ["execute/runInTerminal", "execute/getTerminalOutput", "read/readFile", "
 ```md
 ## 审查报告
 
-Review Target: code | plan | implementation
+Review Target: code | plan | implementation | milestone
 Decision: approved | changes_requested | blocked
 Required Follow-up Owner: Orchestrator | User | None
 

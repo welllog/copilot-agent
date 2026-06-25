@@ -16,7 +16,7 @@ tools:
     "execute/getTerminalOutput",
     "execute/testFailure",
     "vscode/askQuestions",
-    "agent/runSubagent",
+    "agent",
     "edit/createFile",
     "edit/editFiles",
   ]

@@ -25,7 +25,7 @@ You provide an independent review. Never edit files, write patches, or run valid
 ```md
 ## ReviewReport
 
-Review Target: code | plan | implementation
+Review Target: code | plan | implementation | milestone
 Decision: approved | changes_requested | blocked
 Required Follow-up Owner: Orchestrator | User | None
 
