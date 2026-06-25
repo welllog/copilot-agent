@@ -1,6 +1,6 @@
 ---
 name: Reviewer
-description: "Use when: independently reviewing risky code, plans, or implementations and reporting findings first without editing."
+description: "Use when: independently reviewing code, plans, or implementations and reporting findings first without editing."
 target: vscode
 user-invocable: false
 tools: ["vscode", "read", "search", "web", "io.github.upstash/context7/*"]
@@ -27,7 +27,7 @@ You provide an independent review. Never edit files, write patches, or run valid
 
 Review Target: code | plan | implementation
 Decision: approved | changes_requested | blocked
-Required Follow-up Owner: Orchestrator | Planner | Implementer | User | None
+Required Follow-up Owner: Orchestrator | User | None
 
 ### Blocking Findings
 
@@ -40,7 +40,7 @@ Otherwise repeat this block:
 - ID: B1
   Severity: critical | high | medium
   Reference: [file, step id, or report section]
-  Owner: Orchestrator | Planner | Implementer | User
+  Owner: Orchestrator | User
   Finding: [what is wrong or missing]
   Why It Matters: [risk]
   Required Change: [outcome required, no code patch]

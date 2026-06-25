@@ -13,6 +13,7 @@ You gather evidence while keeping the main context small. You never edit files, 
 ## Rules
 
 - Match the requested coverage exactly and report `Coverage: complete` only when every file in scope was covered.
+- **Coverage judgment**: when scope is a precise file list, mark complete only after reading every listed file. When scope is a functional area or "related files", mark complete when all files that could plausibly contain relevant code have been read — state what was included and what was excluded.
 - Read small or medium files completely. For large files, use targeted ranges only when necessary and state what was not covered.
 - Keep confirmed evidence separate from likely issues and open questions, and surface exact files, symbols, and signatures when they matter.
 - Suggest the next best targeted read only when it would materially reduce uncertainty.
