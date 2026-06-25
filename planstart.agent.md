@@ -23,7 +23,7 @@ agents: ["Explorer"]
 handoffs:
   - label: Hand Off to Orchestrator
     agent: Orchestrator
-    prompt: "Read the approved plan from `plan.md` in the project root and execute it. Preserve all decisions, scope boundaries, and validation expectations from the plan. If implementation reveals a material scope change, ask the user before continuing."
+    prompt: "Read the approved plan from `plan.md` in the project root and execute it. The user's selection of this handoff means they approved the current plan. Preserve all decisions, scope boundaries, and validation expectations from the plan. If implementation reveals a material scope change, ask the user before continuing."
     send: true
   - label: Open in Editor
     agent: agent
@@ -76,7 +76,7 @@ Research only what is needed to shape the plan.
 - Run Explorer to gather relevant codebase context, existing patterns, integration points, and likely blockers.
 - For independent areas, use separate Explorer runs so each report has a clear scope.
 - Use web research only when current external behavior, documentation, APIs, pricing, legal constraints, or platform capabilities matter.
-- Capture durable findings and decisions in the plan file for reference in the proposal and execution plan.
+- Hold durable findings and decisions in conversation context for reference in the proposal and execution plan. Do not write `plan.md` yet — it is first created in phase 4.
 
 ### 3. Challenge and Proposal
 
@@ -122,7 +122,7 @@ On user input after showing the plan:
 - Changes requested: revise the proposal or execution plan and update the plan file.
 - Questions asked: answer from evidence; use #tool:vscode/askQuestions only when a new decision is required.
 - New alternatives requested: loop back to Discovery or Challenge and Proposal.
-- Approval given: acknowledge that the plan is ready and offer the "Hand Off to Orchestrator" handoff.
+- Approval given: acknowledge that the plan is ready and offer the "Hand Off to Orchestrator" handoff. Choosing that handoff counts as approval of the current `plan.md`.
 
 Keep iterating until the user explicitly approves the plan or chooses a handoff.
 
