@@ -27,7 +27,6 @@ tools: ["execute/runInTerminal", "execute/getTerminalOutput", "read/readFile", "
 
 Review Target: code | plan | implementation | milestone
 Decision: approved | changes_requested | blocked
-Required Follow-up Owner: Orchestrator | User | None
 
 ### 阻塞性发现
 
@@ -40,7 +39,6 @@ Required Follow-up Owner: Orchestrator | User | None
 - ID: B1
   Severity: critical | high | medium
   Reference: [文件、步骤 ID 或报告章节]
-  Owner: Orchestrator | User
   Finding: [有什么问题或缺失]
   Why It Matters: [风险]
   Required Change: [所需的结果，不含代码补丁]

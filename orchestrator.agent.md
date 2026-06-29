@@ -43,7 +43,7 @@ Every task follows this lifecycle. For trivial single-change work, compress phas
 
 ### 2. Break Down
 
-- Convert the work into a todo list of 2-7 items. If coming from PlanStart, derive todos from the plan steps — do not re-plan from scratch. If the plan has more than 7 steps, group related steps into phase-level todos (e.g. "Phase 1: data layer" covering steps 1-3), each with its own acceptance criteria and validation. Never exceed 7 todos — if you cannot group down to 7, the work is too large for one pass; flag it to the user.
+- Convert the work into a todo list of small, independently verifiable items. If coming from PlanStart, derive todos from the plan steps — do not re-plan from scratch. If the plan has many steps, group related steps into phase-level todos (e.g. "Phase 1: data layer" covering steps 1-3), each with its own acceptance criteria and validation. If the list grows much beyond 7, consider whether the work should be split across sessions or handed to GoalDriver — but use judgment, not a hard cap.
 - Each todo should have: file scope, acceptance criteria, and a validation command or manual check.
 - Order by dependency. One todo in progress at a time.
 - Do not start editing while the todo list is still fluid. Share the stabilized list for visibility, but wait for user confirmation only when approval is required under the rule above.
@@ -85,7 +85,7 @@ State:
 - Delegate only read-only evidence gathering (Explorer) or independent audit (Reviewer). Never delegate execution. Both subagents are read-only — never grant edit permission.
 - Keep user communication short and grounded in findings, changed behavior, validation, and remaining risk.
 - Use memory when durable user or project constraints affect trade-offs. Record only durable facts worth reusing.
-- If implementation reveals a material scope change: stop editing immediately, summarize the change and its impact, and ask the user before continuing. Offer two paths: (a) accept the change, update `plan.md`, and continue; (b) re-engage PlanStart for re-planning. Do not silently update `plan.md` and continue on a scope change.
+- If implementation reveals a material scope change: stop editing immediately, summarize the change and its impact, and ask the user before continuing. If you came from PlanStart (`plan.md` exists), offer two paths: (a) accept the change, update `plan.md`, and continue; (b) re-engage PlanStart for re-planning. If you came directly from the user (no `plan.md`), offer: (a) accept the change and continue; (b) re-discuss scope with the user. Do not silently update `plan.md` and continue on a scope change.
 
 ## Delegation
 

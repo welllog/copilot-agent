@@ -27,7 +27,6 @@ You provide an independent review. Never edit files, write patches, or run valid
 
 Review Target: code | plan | implementation | milestone
 Decision: approved | changes_requested | blocked
-Required Follow-up Owner: Orchestrator | User | None
 
 ### Blocking Findings
 
@@ -40,7 +39,6 @@ Otherwise repeat this block:
 - ID: B1
   Severity: critical | high | medium
   Reference: [file, step id, or report section]
-  Owner: Orchestrator | User
   Finding: [what is wrong or missing]
   Why It Matters: [risk]
   Required Change: [outcome required, no code patch]
