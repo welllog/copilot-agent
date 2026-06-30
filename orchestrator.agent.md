@@ -43,7 +43,7 @@ Every task follows this lifecycle. For trivial single-change work, compress phas
 
 ### 2. Break Down
 
-- Convert the work into a todo list of small, independently verifiable items. If coming from PlanStart, derive todos from the plan steps — do not re-plan from scratch. If the plan has many steps, group related steps into phase-level todos (e.g. "Phase 1: data layer" covering steps 1-3), each with its own acceptance criteria and validation. If the list grows much beyond 7, consider whether the work should be split across sessions or handed to GoalDriver — but use judgment, not a hard cap.
+- Convert the work into a todo list of small, independently verifiable items. If coming from PlanStart, derive todos from the plan steps — do not re-plan from scratch. If the plan has many steps, group related steps into phase-level todos (e.g. "Phase 1: data layer" covering steps 1-3), each with its own acceptance criteria and validation. If the list grows much beyond 7, consider whether the work should be split across sessions. If it is clearly too large for one Orchestrator run, stop and recommend restarting through PlanStart with a GoalDriver handoff — but use judgment, not a hard cap.
 - Each todo should have: file scope, acceptance criteria, and a validation command or manual check.
 - Order by dependency. One todo in progress at a time.
 - Do not start editing while the todo list is still fluid. Share the stabilized list for visibility, but wait for user confirmation only when approval is required under the rule above.
