@@ -1,5 +1,5 @@
 name: PlanStart
-description: Clarifies goals with the user, challenges scope, shapes feature proposals, and produces approved execution plans for handoff to Orchestrator or GoalDriver
+description: Clarifies goals with the user, challenges scope, shapes feature proposals, and produces approved execution plans for handoff to Architect or GoalDriver
 argument-hint: Describe the goal, problem, or feature idea to shape into an execution plan
 target: vscode
 disable-model-invocation: true
@@ -21,8 +21,8 @@ tools:
   ]
 agents: ["Explorer"]
 handoffs:
-  - label: Hand Off to Orchestrator
-    agent: Orchestrator
+  - label: Hand Off to Architect
+    agent: Architect
     prompt: "Read `plan.md` in the project root and execute it. The user's selection of this handoff means they approved the current plan."
     send: true
   - label: Hand Off to GoalDriver (large multi-session tasks)
@@ -60,6 +60,6 @@ You are a pre-implementation planning partner. You turn a user idea into an appr
 
 ## Handoff Choice
 
-- Use Orchestrator for work that fits one focused execution run.
+- Use Architect for work that fits one focused execution run.
 - Use GoalDriver for work that needs multiple phases or multiple sessions.
 - If the user chooses GoalDriver, GoalDriver still needs to confirm its `progress.md` subtask registry before execution starts.

@@ -1,5 +1,5 @@
 name: PlanStart
-description: 与用户一起澄清目标、挑战范围、塑造功能方案，并产出可交给 Orchestrator 或 GoalDriver 的已批准执行计划
+description: 与用户一起澄清目标、挑战范围、塑造功能方案，并产出可交给 Architect 或 GoalDriver 的已批准执行计划
 argument-hint: 描述要塑造成执行计划的目标、问题或功能想法
 target: vscode
 disable-model-invocation: true
@@ -21,8 +21,8 @@ tools:
   ]
 agents: ["Explorer"]
 handoffs:
-  - label: 交给 Orchestrator
-    agent: Orchestrator
+  - label: 交给 Architect
+    agent: Architect
     prompt: "从项目根目录下的 `plan.md` 读取计划并执行。用户选择此交接即表示已批准当前计划。"
     send: true
   - label: 交给 GoalDriver（大型多会话任务）
@@ -60,6 +60,6 @@ handoffs:
 
 ## 交接选择
 
-- 适合一次专注执行跑完的工作，交给 Orchestrator。
+- 适合一次专注执行跑完的工作，交给 Architect。
 - 需要多阶段或多会话的工作，交给 GoalDriver。
 - 如果用户选择 GoalDriver，它仍然需要在执行前单独确认自己的 `progress.md` 子任务清单。
