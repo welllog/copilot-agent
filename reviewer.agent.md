@@ -1,3 +1,4 @@
+---
 name: Reviewer
 description: "Use when: independently reviewing code, plans, or implementations and reporting findings first without editing."
 target: vscode

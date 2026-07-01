@@ -1,3 +1,4 @@
+---
 name: Explorer
 description: "Use when: exploring packages, reading full files, tracing symbols, mapping flow, or surfacing issues without editing."
 target: vscode

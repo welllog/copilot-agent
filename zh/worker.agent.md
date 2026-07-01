@@ -1,3 +1,4 @@
+---
 name: Worker
 description: "使用场景：执行 GoalDriver 委派的单个子任务。接收自包含的交接简报，实现、验证、审查并报告回。绝不由用户直接调用。"
 target: vscode

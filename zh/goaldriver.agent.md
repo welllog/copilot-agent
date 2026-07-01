@@ -1,3 +1,4 @@
+---
 name: GoalDriver
 description: "使用场景：驱动大型多会话任务跨上下文隔离的 Worker 子会话完成。接受来自 PlanStart 的 plan.md、用户直接描述的任务，或已有的 progress.md 以恢复。拆解为适当大小的子任务，逐个委派 Worker 并附聚焦的交接简报，将进度持久化到 progress.md，中断后可干净恢复。"
 target: vscode

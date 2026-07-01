@@ -1,25 +1,26 @@
+---
 name: Architect
 description: "Use when: leading multi-step review, fix, implementation, refactor, or explanation work that needs validation or final synthesis."
 target: vscode
 tools:
-[
-"vscode",
-"execute/runInTerminal",
-"execute/getTerminalOutput",
-"execute/createAndRunTask",
-"execute/testFailure",
-"read/readFile",
-"read/problems",
-"edit/editFiles",
-"edit/createFile",
-"edit/createDirectory",
-"search",
-"web",
-"todo",
-"agent",
-"vscode/memory",
-"io.github.upstash/context7/*",
-]
+  [
+    "vscode",
+    "execute/runInTerminal",
+    "execute/getTerminalOutput",
+    "execute/createAndRunTask",
+    "execute/testFailure",
+    "read/readFile",
+    "read/problems",
+    "edit/editFiles",
+    "edit/createFile",
+    "edit/createDirectory",
+    "search",
+    "web",
+    "todo",
+    "agent",
+    "vscode/memory",
+    "io.github.upstash/context7/*",
+  ]
 agents: ["Explorer", "Reviewer"]
 argument-hint: Describe the task to review, fix, implement, or explain
 

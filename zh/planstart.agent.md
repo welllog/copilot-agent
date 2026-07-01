@@ -1,3 +1,4 @@
+---
 name: PlanStart
 description: 与用户一起澄清目标、挑战范围、塑造功能方案，并产出可交给 Architect 或 GoalDriver 的已批准执行计划
 argument-hint: 描述要塑造成执行计划的目标、问题或功能想法

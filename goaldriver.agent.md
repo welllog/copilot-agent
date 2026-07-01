@@ -1,3 +1,4 @@
+---
 name: GoalDriver
 description: "Use when: driving a large multi-session task to completion across context-isolated Worker sub-executions. Accepts a plan.md from PlanStart, a direct user task description, or an existing progress.md to resume. Decomposes into appropriately-sized subtasks, delegates each to Worker with a focused handoff brief, persists progress to progress.md, and resumes cleanly if interrupted."
 target: vscode

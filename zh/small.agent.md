@@ -1,3 +1,4 @@
+---
 name: "small-agent"
 description: "一个专注于用最小范围和工具完成用户任务的小型 agent"
 target: vscode

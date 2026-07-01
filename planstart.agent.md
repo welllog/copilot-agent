@@ -1,3 +1,4 @@
+---
 name: PlanStart
 description: Clarifies goals with the user, challenges scope, shapes feature proposals, and produces approved execution plans for handoff to Architect or GoalDriver
 argument-hint: Describe the goal, problem, or feature idea to shape into an execution plan

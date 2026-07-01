@@ -1,3 +1,4 @@
+---
 name: Worker
 description: "Use when: executing a single subtask delegated by GoalDriver. Receives a self-contained handoff brief, implements, validates, reviews, and reports back. Never invoked directly by the user."
 target: vscode
